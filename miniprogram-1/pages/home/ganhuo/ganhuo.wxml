@@ -1,0 +1,7 @@
+<!--pages/home/ganhuo/ganhuo.wxml-->
+<block wx:for="{{ganhuo}}" wx:key='index'>
+<view class="ganhuo" bindtap="toBlank" data-link="{{item.link}}">
+<image style="  width: 25%;height: 17vh;" src="{{item.imgsrc}}"></image>
+  <text style="font-size: large; margin-left: 2%;" >{{item.title}}</text>
+</view>
+</block>
